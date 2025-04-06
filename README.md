@@ -1,4 +1,4 @@
-# 🍺 🍺 🍺 **DESAFIO DE PROJETO DIO x HEINEKEN** 🍺 🍺 🍺
+# 🍺 🍺  **DESAFIO DE PROJETO DIO x HEINEKEN** 🍺 🍺 
 
 
 # 📦 Projeto de Banco de Dados Relacional para E-commerce
