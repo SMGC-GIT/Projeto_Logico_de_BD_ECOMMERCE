@@ -1,7 +1,7 @@
-# 🍺 🍺  **DESAFIO DE PROJETO DIO x HEINEKEN** 🍺 🍺 
+# 🍺  **DESAFIO DE PROJETO DIO x HEINEKEN** 🍺  
 
 
-# 📦 Projeto de Banco de Dados Relacional para E-commerce
+# 📦 Projeto de Banco de Dados Relacional | E-commerce
 
 
 ## 📝 Descrição do Projeto
@@ -47,6 +47,9 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 - Cada **produto** pertence a uma **categoria**
 - Cada **pedido** pode ter um **pagamento**
 
+<p align="center">
+  <img src="img/diagrama.png" alt="Diagrama do banco de dados" width="700"/>
+</p>
 
 ---
 
