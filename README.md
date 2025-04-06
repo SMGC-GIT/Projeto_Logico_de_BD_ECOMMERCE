@@ -1,3 +1,6 @@
+# 🍺 🍺 🍺 **DESAFIO DE PROJETO DIO x HEINEKEN** 🍺 🍺 🍺
+
+
 # 📦 Projeto de Banco de Dados Relacional para E-commerce
 
 
@@ -26,73 +29,16 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 
 ---
 
-## 🧪 Estrutura das Tabelas
+## 🧪  Tabelas x Relacionamentos
 
 ### 🔹 Tabela `clientes`
-
-| Campo       | Tipo         | Restrição     |
-|-------------|--------------|----------------|
-| cliente_id  | INT          | PRIMARY KEY    |
-| nome        | VARCHAR(100) | NOT NULL       |
-| email       | VARCHAR(100) | UNIQUE         |
-| telefone    | VARCHAR(20)  |                |
-
----
-
 ### 🔹 Tabela `categorias`
-
-| Campo        | Tipo         | Restrição   |
-|--------------|--------------|--------------|
-| categoria_id | INT          | PRIMARY KEY  |
-| nome         | VARCHAR(100) | NOT NULL     |
-
----
-
 ### 🔹 Tabela `produtos`
-
-| Campo        | Tipo          | Restrição           |
-|--------------|---------------|----------------------|
-| produto_id   | INT           | PRIMARY KEY          |
-| nome         | VARCHAR(100)  | NOT NULL             |
-| preco        | DECIMAL(10,2) | NOT NULL             |
-| categoria_id | INT           | FOREIGN KEY → categorias(categoria_id) |
-
----
-
 ### 🔹 Tabela `pedidos`
-
-| Campo       | Tipo | Restrição                          |
-|-------------|------|-------------------------------------|
-| pedido_id   | INT  | PRIMARY KEY                         |
-| cliente_id  | INT  | FOREIGN KEY → clientes(cliente_id) |
-| data_pedido | DATE | NOT NULL                            |
-
----
-
-### 🔹 Tabela `itens_pedido`
-
-| Campo           | Tipo          | Restrição                              |
-|-----------------|---------------|-----------------------------------------|
-| item_pedido_id  | INT           | PRIMARY KEY                             |
-| pedido_id       | INT           | FOREIGN KEY → pedidos(pedido_id)        |
-| produto_id      | INT           | FOREIGN KEY → produtos(produto_id)      |
-| quantidade      | INT           | NOT NULL                                |
-| preco_unitario  | DECIMAL(10,2) | NOT NULL                                |
-
----
-
+### 🔹 Tabela `itens_pedido` 
 ### 🔹 Tabela `pagamentos`
-
-| Campo           | Tipo          | Restrição                            |
-|-----------------|---------------|----------------------------------------|
-| pagamento_id    | INT           | PRIMARY KEY                            |
-| pedido_id       | INT           | FOREIGN KEY → pedidos(pedido_id)       |
-| valor           | DECIMAL(10,2) | NOT NULL                               |
-| data_pagamento  | DATE          | NOT NULL                               |
-| metodo_pagamento| VARCHAR(50)   | NOT NULL                               |
-
----
-
+### 🔹 Tabela `fornecedores`
+ 
 ## 🧩 Relacionamentos
 
 - Cada **cliente** pode fazer vários **pedidos**
@@ -114,6 +60,7 @@ Abaixo está o esquema lógico com os comandos SQL para criação das tabelas:
 ```sql
 -- Criação das tabelas do banco de dados de e-commerce
 
+🔹 Tabela `clientes`
 CREATE TABLE clientes (
     id_cliente INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -123,12 +70,14 @@ CREATE TABLE clientes (
     data_cadastro DATE DEFAULT CURRENT_DATE
 );
 
+🔹 Tabela `categorias`
 CREATE TABLE categorias (
     id_categoria INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     descricao TEXT
 );
 
+🔹 Tabela `produtos`
 CREATE TABLE produtos (
     id_produto INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -139,6 +88,7 @@ CREATE TABLE produtos (
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );
 
+🔹 Tabela `pedidos`
 CREATE TABLE pedidos (
     id_pedido INT PRIMARY KEY,
     id_cliente INT,
@@ -148,6 +98,7 @@ CREATE TABLE pedidos (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
 );
 
+🔹 Tabela `itens_pedido`
 CREATE TABLE itens_pedido (
     id_item_pedido INT PRIMARY KEY,
     id_pedido INT,
@@ -158,6 +109,7 @@ CREATE TABLE itens_pedido (
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
 
+🔹 Tabela `pagamentos`
 CREATE TABLE pagamentos (
     id_pagamento INT PRIMARY KEY,
     id_pedido INT,
@@ -168,6 +120,7 @@ CREATE TABLE pagamentos (
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido)
 );
 
+🔹 Tabela `fornecedores`
 CREATE TABLE fornecedores (
     id_fornecedor INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -177,6 +130,7 @@ CREATE TABLE fornecedores (
     endereco VARCHAR(255)
 );
 ```
+
 ---
 
 ## 🧪 Inserção de Dados
@@ -363,4 +317,29 @@ WHERE cat.nome = 'Eletrônicos';
 ## 📌 Créditos
 
 > Criado por **SILVIA GUIMARÃES** como parte de portfólio de projetos SQL e modelagem relacional.
+
+---
+
+## **Agradecimentos**
+
+Agradeço à equipe da **DIO** e **HEINEKEN** pela oportunidade de participar deste desafio e ampliar minhas habilidades em modelagem de banco de dados e organização estrutural de informações.  
+Este projeto reflete o aprendizado prático e meu compromisso com boas práticas na área de tecnologia.
+
+---
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato:
+- **E-mail:** (sguimaraes1004@gmail.com)
+- **Redes Sociais:** (https://www.linkedin.com/in/silvia-maria-guimar%C3%A3es-costa-3a01b423b)
+
+---
+
+🍺 _A parceria com a Heineken reforça o compromisso de promover a inovação e o aprendizado na área de tecnologia._
+
+---
+
+
+# ![DIO Logo](https://hermes.digitalinnovation.one/assets/diome/logo.png)
+
 
