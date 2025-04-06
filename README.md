@@ -47,9 +47,8 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 - Cada **produto** pertence a uma **categoria**
 - Cada **pedido** pode ter um **pagamento**
 
-<p align="center">
-  <img src="img/diagrama.png" alt="Diagrama do banco de dados" width="700"/>
-</p>
+
+[LINK PARA O MODELO AQUI] (https:// https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)
 
 ---
 
