@@ -48,7 +48,7 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 - Cada **pedido** pode ter um **pagamento**
 
 
-[LINK PARA O MODELO AQUI] (https:// https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)
+[LINK PARA O MODELO AQUI] (https:// https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/diagrama.png)
 
 ---
 
