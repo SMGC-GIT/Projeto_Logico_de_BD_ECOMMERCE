@@ -50,9 +50,12 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 
 ---
 
+
 ### 🔗 Diagrama do Banco de Dados
 
-👉 [📎 Clique aqui para ver o diagrama do banco de dados](https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)
+
+> 👉 **[Clique aqui para visualizar o Diagrama do Banco de Dados](https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)**
+
 
 ---
 
