@@ -48,17 +48,13 @@ Chaves primárias e estrangeiras foram criadas conforme o modelo de negócio.
 - Cada **pedido** pode ter um **pagamento**
 
 
-[LINK PARA O MODELO AQUI] (https:// https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/diagrama.png)
-
-[📎 Clique aqui para ver o diagrama do banco de dados](https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)
-
-[📎 Clique aqui para ver o diagrama do banco de dados](img/diagrama.png)
-
-[📎 Ver diagrama em alta resolução](https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png?raw=true)
-
-
 ---
 
+### 🔗 Diagrama do Banco de Dados
+
+👉 [📎 Clique aqui para ver o diagrama do banco de dados](https://github.com/SMGC-GIT/Projeto_Logico_de_BD_ECOMMERCE/blob/main/diagrama.png)
+
+---
 
 ## 📦 Estrutura do Banco de Dados (Schema)
 
